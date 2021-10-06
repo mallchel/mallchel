@@ -1,8 +1,7 @@
 ### Hi there 👋
 
-- 🔭 I’m currently working on Sber's internal projects
-- 🌱 I’m currently learning Nest.js
-- 👯 I’m looking to collaborate on [RC FORM PURE](https://github.com/mallchel/rc-form-pure)
+- 🔭 I'm currently working for a SignNow
+- 👯 I'm looking to collaborate on [RC FORM PURE](https://github.com/mallchel/rc-form-pure)
 - 💬 Ask me about anything [here](https://github.com/mallchel/mallchel/issues)
 
 <br />
