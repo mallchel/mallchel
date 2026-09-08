@@ -1,7 +1,6 @@
 ### Hi there 👋
 
 - 🔭 I'm currently working for SignNow
-- 👯 I'm looking for a new interesting AI project
 - 🖌️ Writing some articles here https://dev.to/mallchel/
 - 💬 Ask me about anything https://github.com/mallchel/mallchel/issues
 
