@@ -1,0 +1,118 @@
+name: RFC (Request for Comments)
+description: Propose a technical change that affects multiple teams, introduces a new architectural pattern, or requires significant engineering investment
+title: "[RFC] "
+labels: ["rfc", "rfc:draft"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before opening this RFC, check [docs/rfc/README.md](../blob/master/docs/rfc/README.md) to
+        confirm you actually need one. Fill every section. "N/A" is a valid answer — just don't skip
+        it silently. The "For TSC use" section is filled in later by the TSC during triage and
+        decision — leave it blank.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: One paragraph. What are you proposing, in plain language?
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / Motivation
+      description: What is broken, missing, risky, or slow today? Why does it matter now?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: "The change itself. Be concrete: code sketches, interface shapes, diagrams, sequence of steps."
+    validations:
+      required: true
+
+  - type: input
+    id: blast-radius-packages
+    attributes:
+      label: "Blast Radius: packages / apps affected"
+    validations:
+      required: true
+
+  - type: input
+    id: blast-radius-teams
+    attributes:
+      label: "Blast Radius: teams affected"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: breaking-change
+    attributes:
+      label: Breaking change?
+      options:
+        - "No"
+        - "Yes"
+    validations:
+      required: true
+
+  - type: textarea
+    id: migration-plan
+    attributes:
+      label: Migration plan
+      description: Required if this is a breaking change. Otherwise write "N/A".
+    validations:
+      required: true
+
+  - type: input
+    id: estimated-effort
+    attributes:
+      label: Estimated effort
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: What else did you consider, including "do nothing", and why was it rejected?
+    validations:
+      required: true
+
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks & Trade-offs
+    validations:
+      required: true
+
+  - type: textarea
+    id: rollout
+    attributes:
+      label: Rollout Plan
+      description: Feature flag / experiment? Phased rollout? Rollback plan if it goes wrong?
+    validations:
+      required: true
+
+  - type: textarea
+    id: open-questions
+    attributes:
+      label: Open Questions
+      description: Anything you want the TSC or reviewers to specifically weigh in on.
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "### For TSC use"
+
+  - type: input
+    id: jira-epic
+    attributes:
+      label: Jira Epic
+      description: Filled in by the TSC — leave blank.
+    validations:
+      required: false
